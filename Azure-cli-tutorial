@@ -1,0 +1,26 @@
+
+# az login 
+az login
+# az account list
+az account list
+# storage account
+az storage account create --name smart-active --resource-group smart-active --location southeastasia --sku Standard_LRS --kind StorageV2
+
+# Manage Azure Virtual Machines:
+# Create VM
+az vm create --resource-group smart-active --name SA01 --image UbuntuLTS --admin-username azureuser --admin-password 'Smart-Active'
+# List VM	
+az vm list
+
+# Start-Process 
+
+az vm start --name SA01 --resource-group smart-active
+# Stop
+
+az vm stop  --name SA01 --resource-group smart-active
+# Delete
+az vm delete  --name SA01 --resource-group smart-active
+
+# az interactive it will show you how to write az commands
+
+az interactive

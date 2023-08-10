@@ -1,0 +1,12 @@
+# Login to Azure Account
+Login-AzAccount 
+#Logout of the Azure account you are connected with in yoursession
+Logout-AzAccount 
+#Subscription Selection
+
+#List all subscriptions in all tenants the account can access
+Get-AzSubscription
+#Get subscriptions in a specific tenant
+Get-AzSubscription -TenantId "xxxx-xxxx-xxxxxxxx"
+#Choose subscription
+Select-AzSubscription –SubscriptionID “SubscriptonI

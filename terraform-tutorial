@@ -1,0 +1,5 @@
+1- logi to Azure CLI
+    az login
+2- list subscriptions
+    az account list
+        
