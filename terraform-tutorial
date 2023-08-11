@@ -2,4 +2,12 @@
     az login
 2- list subscriptions
     az account list
-        
+3- add user ID and tenant_id
+            provider "azurerm" {
+            features {}
+
+            subscription_id = "5ffdafb5-1a88-4605-9a42-37263853cb53"
+            tenant_id       = "3154c2b2-568c-4d0f-8354-8dad5211339c"
+            }
+### Import Existing Azure Resource
+    terraform import "azurerm_resource_group.smart_active" "/subscriptions/5ffdafb5-1a88-4605-9a42-37263853cb53/resourceGroups/smart-active"
