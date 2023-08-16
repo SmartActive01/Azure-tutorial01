@@ -24,3 +24,7 @@ az vm delete  --name SA01 --resource-group smart-active
 # az interactive it will show you how to write az commands
 
 az interactive
+## multi subscription account login
+az login --tenant "3154c2b2-568c-4d0f-8354-8dad5211339c"
+### query az account lis
+az account list --query "[].{name:name , subscriptionId: id}"
