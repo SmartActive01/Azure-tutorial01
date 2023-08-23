@@ -35,12 +35,12 @@ az ad sp create-for-rbac --name TerraformSP --role contributor --scopes /subscri
 
 az  ad sp create-for-rbac -n "MyApp"
 ###outpuy 
-{
-    "appId": "5418f619-ec2d-426e-9a81-92c1f8a2181f",
-    "displayName": "TerraformSP",
-    "password": "QK48Q~hFjJsmN7jAcKNOWN3Z8j8SNwDZF0mknclC",
-    "tenant": "3154c2b2-568c-4d0f-8354-8dad5211339c"
-  }
+      # {
+      #     "appId": "5418f619-ec2d-426e-9a81-92c1f8a2181f",
+      #     "displayName": "TerraformSP",
+      #     "password": "QK48Q~hFjJsmN7jAcKNOWN3Z8j8SNwDZF0mknclC",
+      #     "tenant": "3154c2b2-568c-4d0f-8354-8dad5211339c"
+      #   }
 ### write the output json to variables.tf and ma
 # {
 #   "appId": "5418f619-ec2d-426e-9a81-92c1f8a2181f",>>>>>>>>>>>>>>>> Client_id
